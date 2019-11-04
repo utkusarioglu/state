@@ -1,2 +1,3 @@
-# state
-A simple state manager
+# State
+
+

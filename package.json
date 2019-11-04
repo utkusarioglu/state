@@ -1,0 +1,40 @@
+{
+  "name": "@utkusarioglu/state",
+  "version": "0.0.2",
+  "description": "A simple state manager",
+  "main": "index.js",
+  "author": {
+    "name": "Utku Sarioglu",
+    "email": "utkusarioglu@gmail.com",
+    "url": "http://www.utkusarioglu.com"
+  },
+  "scripts": {
+    "declaration": "dts-bundle --name @utkusarioglu/state --main lib/state.d.ts --out ../index.d.ts",
+    "clean": "shx rm -rf _bundles lib lib-esm index.d.ts index.js index.js.map package-lock.json",
+    "build": "webpack && npm run declaration",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.14",
+    "babel-jest": "23.0.0",
+    "jest": "23.0.0",
+    "shx": "^0.3.2",
+    "ts-jest": "24.1.0",
+    "ts-loader": "6.2.1",
+    "typescript": "^3.2.2",
+    "dts-bundle": "0.7.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "@utkusarioglu/object-assist": "https://github.com/utkusarioglu/ObjectAssist.git",
+    "@utkusarioglu/string-assist": "https://github.com/utkusarioglu/StringAssist.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utkusarioglu/state.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/utkusarioglu/State/issues"
+  },
+  "homepage": "https://github.com/utkusarioglu/State#readme"
+}
