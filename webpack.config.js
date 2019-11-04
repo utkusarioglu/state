@@ -11,7 +11,6 @@ module.exports = {
         path: __dirname,
         filename: '[name].js',
         libraryTarget: 'amd',
-        library: 'Lib',
         umdNamedDefine: true
     },
     resolve: {
