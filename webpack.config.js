@@ -10,7 +10,7 @@ module.exports = {
     output: {
         path: __dirname,
         filename: '[name].js',
-        libraryTarget: 'amd',
+        libraryTarget: 'commonjs',
         umdNamedDefine: true
     },
     resolve: {
