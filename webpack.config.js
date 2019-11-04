@@ -18,11 +18,6 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js']
     },
     devtool: 'source-map',
-    plugins: [
-          //new TypescriptDeclarationPlugin({
-          //  out: 'index.d.ts'
-          //}),
-    ],
     module: {
         rules: [{
             test: /\.tsx?$/,
