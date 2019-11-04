@@ -1,7 +1,7 @@
 export declare type t_state = any;
-export declare type t_stateInput = {
+export interface i_stateInput {
     [key: string]: any;
-};
+}
 export declare type t_classState = {
     [variable_name: string]: t_state;
 };

@@ -6,7 +6,9 @@ export type t_state = any;
 /**
  * Datatype that set_State accepts for the initial state vars.
  * */
-export type t_stateInput = { [key: string]: any}
+export interface i_stateInput {
+    [key: string]: any
+}
 
 /**
  * collection of instance variables: the state of the instance

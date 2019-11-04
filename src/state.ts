@@ -28,7 +28,7 @@ import {
 } from "./t_state";
 
 
-
+export { i_stateInput } from "./t_state";
 
 
 /**

@@ -1,6 +1,7 @@
 import "@utkusarioglu/object-assist";
 import "@utkusarioglu/string-assist";
 import { t_classStatesList, t_instanceId, t_variableName, t_propertyPath, t_trackRecord, t_trackRecordStack, t_filteringFields, e_filterMode, t_trackRecordSimplified, t_namespace, t_channel } from "./t_state";
+export { i_stateInput } from "./t_state";
 export declare class State {
     protected _channel: t_channel;
     private static _states;
