@@ -333,6 +333,17 @@ export class State {
         }
     }
 
+    /**
+     * Removes all the states for all consumers
+     * 
+     * @remarks
+     * Class: State
+     * Service: State
+     * */
+    static remove_AllStates(): void {
+        State._states = {};
+    }
+
 
 
 /* ---------------------------------------------------------- Use Case ---------

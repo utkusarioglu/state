@@ -32,6 +32,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="jest.config.js" />
     <Content Include="tsconfig.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
@@ -42,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\c_state.ts" />
+    <TypeScriptCompile Include="src\state.test.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\state.ts" />
     <TypeScriptCompile Include="src\t_state.ts" />
   </ItemGroup>

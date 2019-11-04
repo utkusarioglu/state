@@ -1,6 +1,5 @@
 var path = require("path");
 var webpack = require("webpack");
-//const TypescriptDeclarationPlugin = require('typescript-declaration-webpack-plugin');
 
 module.exports = {
     entry: {

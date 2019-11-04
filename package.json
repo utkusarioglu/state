@@ -16,18 +16,18 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@types/node": "^8.0.14",
-    "babel-jest": "23.0.0",
-    "jest": "23.0.0",
-    "shx": "^0.3.2",
-    "ts-jest": "24.1.0",
-    "ts-loader": "6.2.1",
     "typescript": "^3.2.2",
     "dts-bundle": "0.7.3",
+    "jest": "24.9.0",
+    "ts-jest": "24.1.0",
+    "shx": "^0.3.2",
+    "ts-loader": "6.2.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "@utkusarioglu/object-assist": "https://github.com/utkusarioglu/ObjectAssist.git",
-    "@utkusarioglu/string-assist": "https://github.com/utkusarioglu/StringAssist.git"
+    "@utkusarioglu/string-assist": "https://github.com/utkusarioglu/StringAssist.git",
+    "@types/node": "^8.0.14",
+    "@types/jest": "24.0.21"
   },
   "repository": {
     "type": "git",
