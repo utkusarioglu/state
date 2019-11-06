@@ -406,9 +406,17 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@utkusarioglu/m_namespace@https://github.com/utkusarioglu/m_namespace.git":
+  version "0.0.92"
+  resolved "https://github.com/utkusarioglu/m_namespace.git#198fec9fa1b00d21426963ef0c0a4d735023940b"
+
 "@utkusarioglu/object-assist@https://github.com/utkusarioglu/ObjectAssist.git":
   version "0.0.12"
   resolved "https://github.com/utkusarioglu/ObjectAssist.git#da9c6e7e6de14b32100637b641627ca44a3460d3"
+
+"@utkusarioglu/starel-globals@https://github.com/utkusarioglu/StarelGlobals.git":
+  version "0.0.6"
+  resolved "https://github.com/utkusarioglu/StarelGlobals.git#863937ba511c576387c7ef792189b294c4f99a9c"
 
 "@utkusarioglu/string-assist@https://github.com/utkusarioglu/StringAssist.git":
   version "0.0.4"

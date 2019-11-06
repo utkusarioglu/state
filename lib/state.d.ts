@@ -1,7 +1,9 @@
 import "@utkusarioglu/object-assist";
 import "@utkusarioglu/string-assist";
+import "@utkusarioglu/starel-globals";
 import { t_classStatesList, t_instanceId, t_variableName, t_propertyPath, t_trackRecord, t_trackRecordStack, t_filteringFields, e_filterMode, t_trackRecordSimplified, t_namespace, t_channel } from "./t_state";
 export { i_stateInput } from "./t_state";
+export { M_State } from "./m_state";
 export declare class State {
     protected _channel: t_channel;
     private static _states;
@@ -19,6 +21,7 @@ export declare class State {
     get_Id(): string;
     get_Channel(): string;
     remove_State(): void;
+    static remove_AllStates(): void;
     track_Variable(variable_name: t_variableName | t_propertyPath, variable_value?: any | undefined, track_test?: (track_record: t_trackRecord) => boolean): void;
     static track_Variable(channel: t_channel, variable_name: t_variableName | t_propertyPath, variable_value?: any | undefined): void;
     static get_AllTrackRecords(): t_trackRecordStack | string;

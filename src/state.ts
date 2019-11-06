@@ -3,6 +3,7 @@
  */
 import "@utkusarioglu/object-assist";
 import "@utkusarioglu/string-assist";
+import "@utkusarioglu/starel-globals";
 
 /*
  *	DATATYPES
@@ -29,6 +30,7 @@ import {
 
 
 export { i_stateInput } from "./t_state";
+export { M_State } from "./m_state"; 
 
 
 /**
@@ -618,7 +620,7 @@ export class State {
     }
 
     private assign_Property(property_path: t_propertyPath, attr: any): boolean {
-        let property_path_arr = property_path.split(C_State.ExpressionSeparator);
+        let property_path_arr = property_path.split(Separator.Expression);
         let property = property_path_arr.slice(-1)[0];
         return (attr as object).sniff(property,
             () => {
@@ -667,7 +669,7 @@ export class State {
     ): boolean {
 
         let property_path: string[] = property_path_string
-            .split(C_State.ExpressionSeparator);
+            .split(Separator.Expression);
         let property: string = property_path.slice(-1)[0] as string;
 
         if (attr.hasOwnProperty(property)) {
