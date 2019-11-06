@@ -406,9 +406,9 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@utkusarioglu/m_namespace@https://github.com/utkusarioglu/m_namespace.git":
-  version "0.0.92"
-  resolved "https://github.com/utkusarioglu/m_namespace.git#198fec9fa1b00d21426963ef0c0a4d735023940b"
+"@utkusarioglu/namespace@https://github.com/utkusarioglu/namespace.git":
+  version "0.0.3"
+  resolved "https://github.com/utkusarioglu/namespace.git#422e74e629f51a251164ba37d61975b61c4b65e8"
 
 "@utkusarioglu/object-assist@https://github.com/utkusarioglu/ObjectAssist.git":
   version "0.0.12"

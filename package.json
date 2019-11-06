@@ -16,21 +16,21 @@
     "test": "jest"
   },
   "devDependencies": {
-    "typescript": "^3.2.2",
-    "dts-bundle": "0.7.3",
-    "jest": "24.9.0",
-    "ts-jest": "24.1.0",
-    "shx": "^0.3.2",
-    "ts-loader": "6.2.1",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
+    "@types/jest": "24.0.21",
+    "@types/node": "^8.0.14",
     "@utkusarioglu/object-assist": "https://github.com/utkusarioglu/ObjectAssist.git",
     "@utkusarioglu/string-assist": "https://github.com/utkusarioglu/StringAssist.git",
-    "@types/node": "^8.0.14",
-    "@types/jest": "24.0.21"
+    "dts-bundle": "0.7.3",
+    "jest": "24.9.0",
+    "shx": "^0.3.2",
+    "ts-jest": "24.1.0",
+    "ts-loader": "6.2.1",
+    "typescript": "^3.2.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "@utkusarioglu/m_namespace": "https://github.com/utkusarioglu/m_namespace.git",
+    "@utkusarioglu/namespace": "https://github.com/utkusarioglu/namespace.git",
     "@utkusarioglu/starel-globals": "https://github.com/utkusarioglu/StarelGlobals.git"
   },
   "repository": {

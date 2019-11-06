@@ -2,18 +2,18 @@
 /*
  *	COMMON CLASSES
  */
-import { State } from "../state";
-import { M_Namespace } from "@utkusarioglu/m_namespace";
+import { State } from "./state";
+import { M_Namespace } from "@utkusarioglu/namespace";
 
 /**
  * CONSTANTS
  * */
-import { C_State } from "../c_state";
+import { C_State } from "./c_state";
 
 /*
  *  DATATYPES
  */
-import { i_stateInput } from "../t_state";
+import { i_stateInput } from "./t_state";
 
 /**
  * Interface for M_State

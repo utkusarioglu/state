@@ -30,7 +30,7 @@ import {
 
 
 export { i_stateInput } from "./t_state";
-export { M_State } from "./M_State/m_state"; 
+export { M_State } from "./m_state"; 
 
 
 /**
