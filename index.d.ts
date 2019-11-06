@@ -8,7 +8,7 @@ declare module '@utkusarioglu/state' {
     import "@utkusarioglu/starel-globals";
     import { t_classStatesList, t_instanceId, t_variableName, t_propertyPath, t_trackRecord, t_trackRecordStack, t_filteringFields, e_filterMode, t_trackRecordSimplified, t_namespace, t_channel } from "@utkusarioglu/state/t_state";
     export { i_stateInput } from "@utkusarioglu/state/t_state";
-    export { M_State } from "@utkusarioglu/state/m_state";
+    export { M_State } from "@utkusarioglu/state/M_State/m_state";
     export class State {
         protected _channel: t_channel;
         constructor(channel?: t_channel, custom_id?: t_instanceId | null);
@@ -88,9 +88,10 @@ declare module '@utkusarioglu/state/t_state' {
     export type t_epoch = number;
 }
 
-declare module '@utkusarioglu/state/m_state' {
-    import { State, i_stateInput } from "@utkusarioglu/state/state";
+declare module '@utkusarioglu/state/M_State/m_state' {
+    import { State } from "@utkusarioglu/state";
     import { M_Namespace } from "@utkusarioglu/m_namespace";
+    import { i_stateInput } from "@utkusarioglu/state/t_state";
     export interface M_State extends M_Namespace {
     }
     export abstract class M_State {

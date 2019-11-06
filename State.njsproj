@@ -40,11 +40,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />
+    <Folder Include="src\M_State\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\c_state.ts" />
-    <TypeScriptCompile Include="src\m_state.test.ts" />
-    <TypeScriptCompile Include="src\m_state.ts" />
+    <TypeScriptCompile Include="src\M_State\m_state.test.ts" />
+    <TypeScriptCompile Include="src\M_State\m_state.ts" />
     <TypeScriptCompile Include="src\state.test.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>

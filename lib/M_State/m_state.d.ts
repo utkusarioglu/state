@@ -1,6 +1,6 @@
-import { State } from "./state";
+import { State } from "../state";
 import { M_Namespace } from "@utkusarioglu/m_namespace";
-import { i_stateInput } from "./t_state";
+import { i_stateInput } from "../t_state";
 export interface M_State extends M_Namespace {
 }
 export declare abstract class M_State {
