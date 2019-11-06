@@ -89,7 +89,7 @@ declare module '@utkusarioglu/state/t_state' {
 }
 
 declare module '@utkusarioglu/state/M_State/m_state' {
-    import { State } from "@utkusarioglu/state";
+    import { State } from "@utkusarioglu/state/state";
     import { M_Namespace } from "@utkusarioglu/m_namespace";
     import { i_stateInput } from "@utkusarioglu/state/t_state";
     export interface M_State extends M_Namespace {
