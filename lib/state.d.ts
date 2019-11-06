@@ -1,6 +1,6 @@
+import "@utkusarioglu/starel-globals";
 import "@utkusarioglu/object-assist";
 import "@utkusarioglu/string-assist";
-import "@utkusarioglu/starel-globals";
 import { t_classStatesList, t_instanceId, t_variableName, t_propertyPath, t_trackRecord, t_trackRecordStack, t_filteringFields, e_filterMode, t_trackRecordSimplified, t_namespace, t_channel } from "./t_state";
 export { i_stateInput } from "./t_state";
 export { M_State } from "./m_state";

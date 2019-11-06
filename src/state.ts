@@ -1,9 +1,9 @@
 ﻿/*
  *	GLOBALS
  */
+import "@utkusarioglu/starel-globals";
 import "@utkusarioglu/object-assist";
 import "@utkusarioglu/string-assist";
-import "@utkusarioglu/starel-globals";
 
 /*
  *	DATATYPES
