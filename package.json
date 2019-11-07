@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/state",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A simple state manager",
   "main": "index.js",
   "types": "index.d.ts",
@@ -10,7 +10,7 @@
     "url": "http://www.utkusarioglu.com"
   },
   "scripts": {
-    "declaration": "dts-bundle --name @utkusarioglu/state --main lib/state.d.ts --out ../index.d.ts",
+    "declaration": "dts-bundle --name @utkusarioglu/state --main lib/index.d.ts --out ../index.d.ts",
     "clean": "shx rm -rf _bundles lib lib-esm index.d.ts index.js index.js.map package-lock.json",
     "build": "webpack && npm run declaration",
     "test": "jest"
@@ -30,8 +30,7 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "@utkusarioglu/namespace": "https://github.com/utkusarioglu/namespace.git",
-    "@utkusarioglu/starel-globals": "https://github.com/utkusarioglu/StarelGlobals.git"
+    "@utkusarioglu/namespace": "https://github.com/utkusarioglu/namespace.git"
   },
   "repository": {
     "type": "git",

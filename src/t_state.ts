@@ -117,3 +117,7 @@ export type t_channel = string;
  * Alias for denoting use of number as epoch
  * */
 export type t_epoch = number
+
+export type i_map<T> = {
+    [key: string]: T
+}

@@ -1,15 +1,13 @@
-import "@utkusarioglu/starel-globals";
 import "@utkusarioglu/object-assist";
 import "@utkusarioglu/string-assist";
-import { t_classStatesList, t_instanceId, t_variableName, t_propertyPath, t_trackRecord, t_trackRecordStack, t_filteringFields, e_filterMode, t_trackRecordSimplified, t_namespace, t_channel } from "./t_state";
-export { i_stateInput } from "./t_state";
-export { M_State } from "./m_state";
+import { t_classStatesList, t_instanceId, t_variableName, t_propertyPath, t_trackRecord, t_trackRecordStack, t_filteringFields, e_filterMode, t_trackRecordSimplified, t_namespace, t_channel, i_map } from "./t_state";
 export declare class State {
     protected _channel: t_channel;
     private static _states;
     private _id;
     private static _track_stack;
     private static _tracking_enabled;
+    private static SEPARATOR;
     constructor(channel?: t_channel, custom_id?: t_instanceId | null);
     get_Var(path_key: string | string[]): any;
     set_Var(path_key: string, value: any): this;
@@ -20,6 +18,8 @@ export declare class State {
     static get_AllStates(hide_id_if_single?: boolean): t_classStatesList;
     get_Id(): string;
     get_Channel(): string;
+    set_Separators_FromGlobal(): void;
+    set_Separators(separators: i_map<string>): void;
     remove_State(): void;
     static remove_AllStates(): void;
     track_Variable(variable_name: t_variableName | t_propertyPath, variable_value?: any | undefined, track_test?: (track_record: t_trackRecord) => boolean): void;

@@ -43,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\c_state.ts" />
+    <TypeScriptCompile Include="src\index.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\m_state.test.ts" />
     <TypeScriptCompile Include="src\m_state.ts" />
     <TypeScriptCompile Include="src\state.test.ts">

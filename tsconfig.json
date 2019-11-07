@@ -15,8 +15,7 @@
     "declarationMap": false /* Generates a sourcemap for each corresponding '.d.ts' file. */
   },
   "include": [
-    "src/state.ts",
-    "src/state.test.ts"
+    "src/index.ts",
   ],
   "exclude": [
     "node_modules"

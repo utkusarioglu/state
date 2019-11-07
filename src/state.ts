@@ -1,7 +1,6 @@
 ﻿/*
  *	GLOBALS
  */
-import "@utkusarioglu/starel-globals";
 import "@utkusarioglu/object-assist";
 import "@utkusarioglu/string-assist";
 
@@ -26,11 +25,9 @@ import {
     t_stateMap,
     t_namespace,
     t_channel,
+    i_map,
 } from "./t_state";
 
-
-export { i_stateInput } from "./t_state";
-export { M_State } from "./m_state"; 
 
 
 /**
@@ -59,6 +56,8 @@ export class State {
     private static _track_stack: t_trackRecordStack = [];
 
     private static _tracking_enabled: boolean = true;
+
+    private static SEPARATOR: i_map<string>;
 
     /**
      * Creates an instance of State class and holds the state information
@@ -306,6 +305,42 @@ export class State {
         return this._channel;
     }
 
+
+/* ---------------------------------------------------------- Use Case ---------
+ *	HANDLE SEPARATORS
+ */
+
+    /**
+     * Sets the separators from the global.separator variable if available, 
+     * if not, uses its own defaults
+     * */
+    set_Separators_FromGlobal(): void {
+        if (global.hasOwnProperty("Separator")) {
+            this.set_Separators(
+                // @ts-ignore
+                global.Separator as i_map<string>
+            )
+        } else {
+            this.set_Separators({
+                "Directory": "/",
+                "Expression": ".",
+                "Id": "-",
+                "Dialogue": "?",
+                "Monologue": ":",
+                "Namespace": "/",
+                "Extension": "."
+            })
+        }
+    }
+
+    /**
+     * Sets the separators from the provided map
+     * 
+     * @param separators
+     */
+    set_Separators(separators: i_map<string>): void {
+        State.SEPARATOR = separators
+    }
 
 
 /*
@@ -620,7 +655,7 @@ export class State {
     }
 
     private assign_Property(property_path: t_propertyPath, attr: any): boolean {
-        let property_path_arr = property_path.split(Separator.Expression);
+        let property_path_arr = property_path.split(State.SEPARATOR.Expression);
         let property = property_path_arr.slice(-1)[0];
         return (attr as object).sniff(property,
             () => {
@@ -669,7 +704,7 @@ export class State {
     ): boolean {
 
         let property_path: string[] = property_path_string
-            .split(Separator.Expression);
+            .split(State.SEPARATOR.Expression);
         let property: string = property_path.slice(-1)[0] as string;
 
         if (attr.hasOwnProperty(property)) {

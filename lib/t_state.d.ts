@@ -47,3 +47,6 @@ export declare type t_stateMap<T> = {
 export declare type t_namespace = string;
 export declare type t_channel = string;
 export declare type t_epoch = number;
+export declare type i_map<T> = {
+    [key: string]: T;
+};

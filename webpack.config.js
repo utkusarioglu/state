@@ -3,7 +3,7 @@ var webpack = require("webpack");
 
 module.exports = {
     entry: {
-        'index': './src/state.ts'
+        'index': './src/index.ts'
     },
     mode: "production",
     output: {
