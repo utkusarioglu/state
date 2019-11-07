@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/state",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A simple state manager",
   "main": "index.js",
   "types": "index.d.ts",
@@ -18,18 +18,18 @@
   "devDependencies": {
     "@types/jest": "24.0.21",
     "@types/node": "^8.0.14",
-    "@utkusarioglu/object-assist": "https://github.com/utkusarioglu/ObjectAssist.git",
-    "@utkusarioglu/string-assist": "https://github.com/utkusarioglu/StringAssist.git",
     "dts-bundle": "0.7.3",
     "jest": "24.9.0",
     "shx": "^0.3.2",
     "ts-jest": "24.1.0",
     "ts-loader": "6.2.1",
-    "typescript": "^3.2.2",
+    "typescript": "^3.6.4",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
+    "@utkusarioglu/object-assist": "https://github.com/utkusarioglu/ObjectAssist.git",
+    "@utkusarioglu/string-assist": "https://github.com/utkusarioglu/StringAssist.git",
     "@utkusarioglu/namespace": "https://github.com/utkusarioglu/namespace.git"
   },
   "repository": {
