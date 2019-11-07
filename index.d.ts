@@ -90,7 +90,10 @@ declare module '@utkusarioglu/state/t_state' {
 
 declare module '@utkusarioglu/state/m_state' {
     import { State } from "@utkusarioglu/state";
+    import { M_Namespace } from "@utkusarioglu/namespace";
     import { i_stateInput } from "@utkusarioglu/state/t_state";
+    export interface M_State extends M_Namespace {
+    }
     export abstract class M_State {
         initialize_State(state_content?: i_stateInput): this;
         get_State(): State;
