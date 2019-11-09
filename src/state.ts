@@ -73,6 +73,8 @@ export class State {
      */
     constructor(channel: t_channel = "Generic", custom_id: t_instanceId | null = null) {
 
+        this.set_Separators_FromGlobal();
+
         this._channel = channel;
         this._id = custom_id ? custom_id : Math.random().toString().slice(2);
 
