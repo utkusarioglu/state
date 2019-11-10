@@ -1,26 +1,45 @@
 
+/* ////////////////////////////////////////////////////////////////////////////
+ *
+ *	IMPORTS
+ *
+ * ///////////////////////////////////////////////////////////////////////// */
+
 /*
- *	COMMON CLASSES
+ *	DEPENDENCIES
  */
-import { State } from "./state";
 import { M_Namespace } from "@utkusarioglu/namespace";
+
+/*
+ *	LOCALS
+ */
+import { State } from "../State/state";
 
 /**
  * CONSTANTS
  * */
-import { C_State } from "./c_state";
+import { C_State } from "../Common/c_state";
 
 /*
  *  DATATYPES
  */
-import { i_stateInput } from "./t_state";
+import { i_stateInput } from "../Common/t_state";
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////
+ *
+ *	EXPORTS
+ *
+ * ///////////////////////////////////////////////////////////////////////// */
 
 /**
  * Interface for M_State
  * */
 export interface M_State extends M_Namespace {}
-
-
 
 /**
  * Provides State management functionality

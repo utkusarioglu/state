@@ -40,19 +40,22 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />
+    <Folder Include="src\Common\" />
+    <Folder Include="src\Mixins\" />
+    <Folder Include="src\State\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\c_state.ts" />
+    <TypeScriptCompile Include="src\Common\c_state.ts" />
     <TypeScriptCompile Include="src\index.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\m_state.test.ts" />
-    <TypeScriptCompile Include="src\m_state.ts" />
-    <TypeScriptCompile Include="src\state.test.ts">
+    <TypeScriptCompile Include="src\Mixins\m_state.test.ts" />
+    <TypeScriptCompile Include="src\Mixins\m_state.ts" />
+    <TypeScriptCompile Include="src\State\state.test.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\state.ts" />
-    <TypeScriptCompile Include="src\t_state.ts" />
+    <TypeScriptCompile Include="src\State\state.ts" />
+    <TypeScriptCompile Include="src\Common\t_state.ts" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>

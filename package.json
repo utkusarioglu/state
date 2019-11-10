@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/state",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "A simple state manager",
   "main": "index.js",
   "types": "index.d.ts",

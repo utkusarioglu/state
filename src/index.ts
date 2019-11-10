@@ -1,3 +1,27 @@
-export { i_stateInput } from "./t_state";
-export { M_State } from "./m_state"; 
-export { State } from "./state";
+
+/* ////////////////////////////////////////////////////////////////////////////
+ *
+ *	IMPORTS
+ *
+ * ///////////////////////////////////////////////////////////////////////// */
+
+/*
+ *	GLOBALS
+ */
+import "@utkusarioglu/object-assist";
+import "@utkusarioglu/string-assist";
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////
+ *
+ *	EXPORTS
+ *
+ * ///////////////////////////////////////////////////////////////////////// */
+
+export { M_State } from "./Mixins/m_state"; 
+export { State } from "./State/state";
+export { i_stateInput } from "./Common/t_state";

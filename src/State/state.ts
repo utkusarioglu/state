@@ -1,13 +1,14 @@
-﻿/*
- *	GLOBALS
- */
-import "@utkusarioglu/object-assist";
-import "@utkusarioglu/string-assist";
+﻿
+/* ////////////////////////////////////////////////////////////////////////////
+ *
+ *	IMPORTS
+ *
+ * ///////////////////////////////////////////////////////////////////////// */
 
 /*
  *	DATATYPES
  */
-import { C_State } from "./c_state";
+import { C_State } from "../Common/c_state";
 
 /*
  *	DATATYPES
@@ -26,9 +27,17 @@ import {
     t_namespace,
     t_channel,
     i_map,
-} from "./t_state";
+} from "../Common/t_state";
 
 
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////
+ *
+ *	EXPORTS
+ *
+ * ///////////////////////////////////////////////////////////////////////// */
 
 /**
  * Stores state information for classes
