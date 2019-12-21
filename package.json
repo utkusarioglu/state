@@ -1,6 +1,6 @@
 {
   "name": "@utkusarioglu/state",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "A simple state manager",
   "main": "index.js",
   "types": "index.d.ts",
@@ -13,7 +13,8 @@
     "declaration": "dts-bundle --name @utkusarioglu/state --main lib/index.d.ts --out ../index.d.ts",
     "clean": "shx rm -rf _bundles lib lib-esm index.d.ts index.js index.js.map package-lock.json",
     "build": "webpack && npm run declaration",
-    "test": "jest"
+    "test": "jest",
+    "build-publish": "npm version patch --force && npm run build && npm publish"
   },
   "devDependencies": {
     "@types/jest": "24.0.21",
@@ -28,9 +29,9 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "@utkusarioglu/namespace": "git+https://github.com/utkusarioglu/namespace.git",
-    "@utkusarioglu/object-assist": "git+https://github.com/utkusarioglu/ObjectAssist.git",
-    "@utkusarioglu/string-assist": "git+https://github.com/utkusarioglu/StringAssist.git"
+    "@utkusarioglu/namespace": "^0.0.5",
+    "@utkusarioglu/object-assist": "^0.0.18",
+    "@utkusarioglu/string-assist": "^0.0.5"
   },
   "repository": {
     "type": "git",
